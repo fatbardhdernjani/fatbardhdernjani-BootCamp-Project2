@@ -1,0 +1,205 @@
+$search-bg: #149edc;
+$settings-bg: #F6F6F6;
+$footer-bg: #4c4c4c;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Museo Sans Rounded', sans-serif;
+}
+
+h1 {
+    color: #fff;
+}
+
+h2 {
+    font-size: 24px;
+    color: #141414;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+span {
+    font-size: 13.6px;
+    color: #545658;
+}
+
+p {
+    font-size: 13.92px;
+    color: #545658;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section, footer {
+    padding: 50px 0px;
+}
+
+footer {
+    background-color: $footer-bg;
+    color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+header {
+    
+    .container {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 0px;
+
+        .logo-sign {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            a {
+                padding-left: 30px;
+                text-decoration: none;
+
+                i {
+                    padding-right: 8px;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .nav-search {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 800px;
+
+            nav {
+                margin-left: 50px;
+                ul {
+                    li {
+                        display: inline;
+                        padding: 0px 20px;
+
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            input[type=text] {
+                padding: 8px 30px;
+                border: 1px solid #E4E4E4;
+                border-radius: 5px;
+                background-color:#f6f6f6;
+            }
+
+            ::placeholder {
+                font-size: 13px;
+                padding-left: 30px;
+            }
+        }
+    }
+}
+
+#search {
+    padding: 0px;
+    height: 69px;
+    background-color: $search-bg;
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+
+        h1 {
+            font-size: 38px;
+            font-weight: 700;
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 15px 0px;
+            margin-left: 60px;
+            border: none;
+            border-radius: 2px;
+        }
+
+        i {
+            font-size: 22px;
+        }
+
+        ::placeholder {
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 15px;
+        }
+    }
+}
+
+#world {
+
+    .container {
+
+        .world {
+            text-align: center;
+
+                h2 {
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+        }
+
+        .weathers {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(5, 1fr);
+
+            .c1 {
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// MOBILE DHE DESKTOP ///
+/// 
+@media screen and (min-width: 800px) {
+    .container {
+      width: 1234px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+}

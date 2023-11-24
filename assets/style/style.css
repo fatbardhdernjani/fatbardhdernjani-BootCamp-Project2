@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Museo Sans Rounded", sans-serif;
+}
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  font-size: 24px;
+  color: #141414;
+}
+
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+span {
+  font-size: 13.6px;
+  color: #545658;
+}
+
+p {
+  font-size: 13.92px;
+  color: #545658;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section, footer {
+  padding: 50px 0px;
+}
+
+footer {
+  background-color: #4c4c4c;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+header .container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px 0px;
+}
+header .container .logo-sign {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .container .logo-sign a {
+  padding-left: 30px;
+  text-decoration: none;
+}
+header .container .logo-sign a i {
+  padding-right: 8px;
+  font-size: 25px;
+}
+header .container .nav-search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 800px;
+}
+header .container .nav-search nav {
+  margin-left: 50px;
+}
+header .container .nav-search nav ul li {
+  display: inline;
+  padding: 0px 20px;
+}
+header .container .nav-search nav ul li a {
+  text-decoration: none;
+}
+header .container .nav-search input[type=text] {
+  padding: 8px 30px;
+  border: 1px solid #E4E4E4;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+}
+header .container .nav-search ::placeholder {
+  font-size: 13px;
+  padding-left: 30px;
+}
+
+#search {
+  padding: 0px;
+  height: 69px;
+  background-color: #149edc;
+}
+#search .container {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+#search .container h1 {
+  font-size: 38px;
+  font-weight: 700;
+}
+#search .container input[type=text] {
+  width: 100%;
+  padding: 15px 0px;
+  margin-left: 60px;
+  border: none;
+  border-radius: 2px;
+}
+#search .container i {
+  font-size: 22px;
+}
+#search .container ::placeholder {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 15px;
+}
+
+#world .container .world {
+  text-align: center;
+}
+#world .container .world h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+#world .container .weathers {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 1234px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
