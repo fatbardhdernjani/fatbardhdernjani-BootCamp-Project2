@@ -204,7 +204,6 @@ header .container .nav-search ::placeholder {
 
 #features .container {
   margin: 0 auto;
-  border: 1px solid red;
 }
 #features .container .features {
   display: grid;
@@ -212,25 +211,86 @@ header .container .nav-search ::placeholder {
   gap: 20px;
   margin-top: 20px;
 }
-#features .container .features .news1, #features .container .features .news2, #features .container .features .news3, #features .container .features .news4 {
-  text-align: center;
-  border: 3px solid green;
-  background-color: #999;
-}
 #features .container .features .news1 img, #features .container .features .news2 img, #features .container .features .news3 img, #features .container .features .news4 img {
   width: 100%;
-  border: 5px solid black;
-  border-radius: 10px 10px 0px 0px;
 }
 #features .container .features .news1 span, #features .container .features .news2 span, #features .container .features .news3 span, #features .container .features .news4 span {
   font-size: 18px;
-  line-height: 1.6;
+  font-weight: 600;
+  color: black;
+  line-height: 1.4;
 }
 #features .container .features .news1 p, #features .container .features .news2 p, #features .container .features .news3 p, #features .container .features .news4 p {
   padding: 5px;
   font-size: 14px;
   line-height: 1.5;
   text-align: justify;
+}
+
+#settings {
+  background-color: #F6F6F6;
+}
+#settings .container .settings {
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#settings .container .settings .settings1, #settings .container .settings .settings2, #settings .container .settings .settings3 {
+  display: grid;
+  grid-template-rows: auto;
+  font-size: 18px;
+}
+#settings .container .settings .settings1 select, #settings .container .settings .settings2 select, #settings .container .settings .settings3 select {
+  margin-top: 10px;
+  padding: 10px 0px;
+  width: 350px;
+  background-color: #f6f6f6;
+  font-size: 15px;
+}
+
+#more-weather .container hr.line-hr {
+  border: 1px solid rgb(232, 232, 232);
+}
+#more-weather .container .uk-weather, #more-weather .container .about, #more-weather .container .elsewhere {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  padding: 20px 0px;
+}
+#more-weather .container .uk-weather ul li, #more-weather .container .about ul li, #more-weather .container .elsewhere ul li {
+  display: inline;
+  padding: 0px 20px;
+}
+#more-weather .container .uk-weather ul li a, #more-weather .container .about ul li a, #more-weather .container .elsewhere ul li a {
+  text-decoration: underline;
+  font-weight: 500;
+}
+#more-weather .container .uk-weather ul li a:hover, #more-weather .container .about ul li a:hover, #more-weather .container .elsewhere ul li a:hover {
+  color: #149edc;
+}
+
+footer .container .title h2 {
+  color: white;
+}
+footer .container .footer1 {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+footer .container .footer1 .fot1, footer .container .footer1 .fot2, footer .container .footer1 .fot3, footer .container .footer1 .fot4, footer .container .footer1 .fot5, footer .container .footer1 .fot6 {
+  padding: 10px 0px;
+}
+footer .container .footer1 .fot1 ul li, footer .container .footer1 .fot2 ul li, footer .container .footer1 .fot3 ul li, footer .container .footer1 .fot4 ul li, footer .container .footer1 .fot5 ul li, footer .container .footer1 .fot6 ul li {
+  padding: 10px 0px;
+}
+footer .container .footer1 .fot1 a, footer .container .footer1 .fot2 a, footer .container .footer1 .fot3 a, footer .container .footer1 .fot4 a, footer .container .footer1 .fot5 a, footer .container .footer1 .fot6 a {
+  color: white;
+}
+footer .container .footer2 {
+  margin-top: 20px;
+}
+footer .container .footer2 p {
+  color: white;
 }
 
 @media screen and (min-width: 800px) {

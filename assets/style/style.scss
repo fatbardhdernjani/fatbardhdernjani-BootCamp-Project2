@@ -242,7 +242,6 @@ header {
 #features {
     .container {
         margin: 0 auto;
-        border: 1px solid red;
         .features {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -250,19 +249,15 @@ header {
             margin-top: 20px;
 
             .news1, .news2, .news3, .news4 {
-                text-align: center;
-                border: 3px solid green;
-                background-color:#999;
-
                 img {
                     width: 100%;
-                    border: 5px solid black;
-                    border-radius: 10px 10px 0px 0px;
                 }
 
                 span {
                     font-size: 18px;
-                    line-height: 1.6;
+                    font-weight: 600;
+                    color: black;
+                    line-height: 1.4;
                 }
 
                 p {
@@ -275,6 +270,93 @@ header {
          }
     }
 }
+
+#settings {
+    background-color: #F6F6F6;
+    .container {
+        .settings {
+            padding-top: 25px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            .settings1, .settings2, .settings3 {
+                display: grid;
+                grid-template-rows: auto;
+                font-size: 18px;
+                select {
+                    margin-top: 10px;
+                    padding: 10px 0px;
+                    width: 350px;
+                    background-color: #f6f6f6;
+                    font-size: 15px;
+                }
+            }
+        }
+
+    }
+}
+
+#more-weather {
+    .container {
+        hr.line-hr {
+            border: 1px solid rgb(232, 232, 232);
+        }
+        .uk-weather, .about, .elsewhere {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            padding: 20px 0px;
+
+            ul li {
+                display: inline;
+                padding: 0px 20px;
+
+                a {
+                    text-decoration: underline;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: $search-bg;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .container {
+        .title {
+            h2 { color: white; }
+        }
+
+        .footer1 {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 30px;
+
+            .fot1, .fot2, .fot3, .fot4, .fot5, .fot6 {
+                padding: 10px 0px;
+                ul li 
+                    {
+                        padding: 10px 0px;
+                    }
+                        a {
+                            color: white;
+                        }
+            }
+        }
+
+        .footer2 {
+            margin-top: 20px;
+            
+            p {
+                color: white;
+            }
+        }
+    }
+}
+
 
             
 
